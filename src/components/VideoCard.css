@@ -1,0 +1,40 @@
+.video-card-container {
+  height: 15rem;  
+  width: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0.1rem;
+  padding-left: 0.5rem;
+  background-color: bisque;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+p {
+  font-weight: 100;
+}
+
+.popularity {
+  display: flex;
+  flex-direction: row;
+}
+
+.popularity i {
+  margin-right: 5px;
+  margin-top: 12px;
+  opacity: 0.6;
+}
+
+.info-section {
+  margin-top: 3rem;
+  overflow: none;
+}
+
+.start-button-container {
+  position: absolute;
+  bottom: 0; 
+  left: 0;
+  margin-bottom: 0.5rem;
+  margin-left: 0.5rem;
+}

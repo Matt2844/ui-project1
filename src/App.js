@@ -1,25 +1,32 @@
-import logo from './logo.svg';
+import React from 'react'
 import './App.css';
+import { Redirect, Route } from 'react-router-dom';
+import Home from './components/Home'
+import Favourites from './components/Favourites'
+import About from './components/About'
+import Settings from './components/Settings'
 
-function App() {
+function App () {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <p>Nav Bar</p>
+      <>
+        <Route exact path='/'>
+          <Redirect to='/home' />
+        </Route>
+        <Route exact path='/home' component={Home} />
+        <Route exact path='/favourites' component={Favourites} />
+        <Route exact path='/about' component={About} />
+        <Route exact path='/settings' component={Settings} />
+      </>
     </div>
   );
 }
 
 export default App;
+
+// Home
+// Favourites
+// About
+// Settings
+
